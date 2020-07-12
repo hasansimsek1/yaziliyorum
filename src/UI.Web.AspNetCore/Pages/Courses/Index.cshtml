@@ -1,0 +1,13 @@
+﻿@page
+@model UI.Web.AspNetCore.Pages.Courses.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Course List</h1>
+<ul>
+    @foreach (var item in Model.Courses)
+    {
+        <li>Id = @item.Id \n Name = @item.Name</li>
+    }
+</ul>
